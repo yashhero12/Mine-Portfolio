@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <header class="header">
+    <div class="logo">Yash</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about-secitions">About</a>
+      <a href="#skills-secitions">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Reviews</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Fullscreen Overlay Menu -->
+  <div class="overlay" id="overlay">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <a href="#">Home</a>
+    <a href="#about-secitions">About</a>
+    <a href="#skills-secitions">Skills</a>
+    <a href="#services-secitions">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Reviews</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Yash — <span>Frontend Developer</span></h1>
+    <p>HTML · CSS · JavaScript · learning Node.js & Express</p>
+    <div class="buttons">
+      <button class="btn btn-red">Hire me</button>
+      <button class="btn btn-outline">See Projects</button>
+    </div>
+  </section>
+
+
+<!-- about section  -->
+ <div class="gaps-between-secition" id="about-secitions"></div>
+
+  <section class="about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About <span class="accent">Me</span></h2>
+
+  <div class="about-wrap">
+    <div class="left">
+      <div class="avatar" title="profile">
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+
+    <div class="right">
+      <p class="lead">
+        Passionate frontend developer with a focus on creating exceptional user
+        experiences. Currently expanding my skills into full-stack development
+        with Node.js and Express to offer comprehensive web solutions.
+      </p>
+
+      <ul class="features">
+        <li><i class="fas fa-graduation-cap"></i><span>Self-taught Developer</span></li>
+        <li><i class="fas fa-code"></i><span>Currently learning Node.js &amp; Express (40% progress)</span></li>
+        <li><i class="fas fa-clock"></i><span>4–6 hours daily practice &amp; learning</span></li>
+        <li><i class="fas fa-map-marker-alt"></i><span>Available for remote work</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- skill section  -->
+ <div class="gaps-between-secition" id="skills-secitions"></div>
+
+
+<section class="skills-section" id="skills">
+  <h1>
+    <span class="skills-title">My <span class="highlight">Skills</span></span>
+  </h1>
+  <div class="skills-grid">
+    <!-- Skill Box: HTML -->
+    <div class="skill-box" data-skill="HTML">
+      <div class="skill-header">
+        <i class="fas fa-globe"></i>
+        <span class="skill-name">HTML</span>
+        <span class="skill-percent">95%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="95"></div>
+      </div>
+      <div class="skill-desc">5+ years experience building semantic, accessible websites</div>
+    </div>
+    <!-- Skill Box: CSS -->
+    <div class="skill-box" data-skill="CSS">
+      <div class="skill-header">
+        <i class="fas fa-palette"></i>
+        <span class="skill-name">CSS</span>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="90"></div>
+      </div>
+      <div class="skill-desc">Advanced CSS, animations, Flexbox, Grid, responsive design</div>
+    </div>
+    <!-- Skill Box: JavaScript -->
+    <div class="skill-box" data-skill="JavaScript">
+      <div class="skill-header">
+        <i class="fas fa-bolt"></i>
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-percent">80%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="80"></div>
+      </div>
+      <div class="skill-desc">ES6+, DOM manipulation, async/await, API integration</div>
+    </div>
+    <!-- Skill Box: Node.js -->
+    <div class="skill-box" data-skill="Node.js">
+      <div class="skill-header">
+        <i class="fas fa-circle" style="color:#2ecc40"></i>
+        <span class="skill-name">Node.js</span>
+        <span class="skill-percent">40%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="40"></div>
+      </div>
+      <div class="skill-desc">Currently learning server-side JavaScript and backend development</div>
+    </div>
+    <!-- Skill Box: Express -->
+    <div class="skill-box" data-skill="Express">
+      <div class="skill-header">
+        <i class="fas fa-rocket"></i>
+        <span class="skill-name">Express</span>
+        <span class="skill-percent">35%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="35"></div>
+      </div>
+      <div class="skill-desc">Learning REST APIs, middleware, and backend architecture</div>
+    </div>
+    <!-- Skill Box: Git -->
+    <div class="skill-box" data-skill="Git">
+      <div class="skill-header">
+        <i class="fas fa-box"></i>
+        <span class="skill-name">Git</span>
+        <span class="skill-percent">70%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" data-percent="70"></div>
+      </div>
+      <div class="skill-desc">Version control, branching, collaboration with GitHub</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- services secition page  -->
+
+<div class="gaps-between-secition" id="services-secitions"></div>
+
+<section class="services-section" id="services">
+  <h1>
+    <span class="services-title">My <span class="highlight">Services</span></span>
+  </h1>
+  <div class="services-grid">
+    <!-- Basic -->
+    <div class="service-card">
+      <h2>Basic</h2>
+      <div class="service-price"><span class="currency">₹</span><span class="digit">3,000</span></div>
+      <p class="service-sub">Perfect for simple landing pages</p>
+      <ul class="service-list">
+        <li><i class="fas fa-check"></i> 1 static landing page (responsive)</li>
+        <li><i class="fas fa-check"></i> Basic animations and hover effects</li>
+        <li><i class="fas fa-check"></i> 2 rounds of minor changes</li>
+        <li><i class="fas fa-clock"></i> 7 days delivery</li>
+      </ul>
+      <button class="service-btn">Buy — ₹3,000</button>
+    </div>
+    <!-- Standard -->
+    <div class="service-card popular">
+      <div class="popular-badge">POPULAR</div>
+      <h2>Standard</h2>
+      <div class="service-price"><span class="currency">₹</span><span class="digit">8,000</span></div>
+      <p class="service-sub">Multi-page websites with forms</p>
+      <ul class="service-list">
+        <li><i class="fas fa-check"></i> Up to 3 pages (home, about, contact)</li>
+        <li><i class="fas fa-check"></i> Contact form + basic animations + responsive</li>
+        <li><i class="fas fa-check"></i> 3 rounds of minor changes</li>
+        <li><i class="fas fa-clock"></i> 14 days delivery</li>
+      </ul>
+      <button class="service-btn">Buy — ₹8,000</button>
+    </div>
+    <!-- Premium -->
+    <div class="service-card">
+      <h2>Premium</h2>
+      <div class="service-price"><span class="currency">₹</span><span class="digit">15,000</span></div>
+      <p class="service-sub">Complete web solutions</p>
+      <ul class="service-list">
+        <li><i class="fas fa-check"></i> Up to 5 pages, SEO basics, optimized images</li>
+        <li><i class="fas fa-check"></i> Contact + Package purchase flow + small CMS-ready structure</li>
+        <li><i class="fas fa-check"></i> 1 month bug-fix / minor updates</li>
+        <li><i class="fas fa-clock"></i> 30 days delivery</li>
+      </ul>
+      <button class="service-btn">Buy — ₹15,000</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
