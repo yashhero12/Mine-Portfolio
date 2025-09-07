@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 </head>
 <body>
    <header class="header">
@@ -14,10 +16,10 @@
       <a href="#">Home</a>
       <a href="#about-secitions">About</a>
       <a href="#skills-secitions">Skills</a>
-      <a href="#services">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+      <a href="#services-secitions">Services</a>
+      <a href="#projects-sections">Projects</a>
+      <a href="#reviews-secitions">Reviews</a>
+      <a href="#contact-secitions">Contact</a>
     </nav>
     <div class="hamburger" id="hamburger">
       <span></span>
@@ -33,18 +35,18 @@
     <a href="#about-secitions">About</a>
     <a href="#skills-secitions">Skills</a>
     <a href="#services-secitions">Services</a>
-    <a href="#">Projects</a>
-    <a href="#">Reviews</a>
-    <a href="#">Contact</a>
+    <a href="#projects-sections">Projects</a>
+    <a href="#reviews-secitions">Reviews</a>
+    <a href="#contact-secitions">Contact</a>
   </div>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="heros">
     <h1>Yash — <span>Frontend Developer</span></h1>
     <p>HTML · CSS · JavaScript · learning Node.js & Express</p>
     <div class="buttons">
       <button class="btn btn-red">Hire me</button>
-      <button class="btn btn-outline">See Projects</button>
+      <button class="btn btn-outline" onclick="window.location.href='#projects-sections'">See Projects</button>
     </div>
   </section>
 
@@ -182,8 +184,8 @@
       <ul class="service-list">
         <li><i class="fas fa-check"></i> 1 static landing page (responsive)</li>
         <li><i class="fas fa-check"></i> Basic animations and hover effects</li>
-        <li><i class="fas fa-check"></i> 2 rounds of minor changes</li>
-        <li><i class="fas fa-clock"></i> 7 days delivery</li>
+        <li><i class="fas fa-check"></i> 5 rounds of minor changes</li>
+        <li><i class="fas fa-clock"></i> 3-5 days delivery</li>
       </ul>
       <button class="service-btn">Buy — ₹3,000</button>
     </div>
@@ -216,6 +218,174 @@
     </div>
   </div>
 </section>
+
+
+
+<!-- Projects  -->
+<div class="gaps-between-secition" id="projects-sections"></div>
+<section class="projects-section">
+  <h1 class="projects-title">Featured <span class="highlight">Projects</span></h1>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fas fa-film"></i></div>
+      <div class="project-links">
+        <a class="live-btn" href="https://yashhero12.github.io/Mohit-Web/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+        <a class="code-btn" href="https://github.com/yashhero12/Mohit-Web" target="_blank"><i class="fas fa-code"></i> Code</a>
+      </div>
+      <h2>Beyond Reels Portfolio Website</h2>
+      <p class="project-desc">
+        Modern portfolio site with animated movie/video previews, smooth transitions, and fully responsive layouts for creative professionals.
+      </p>
+      <div class="project-tags">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fas fa-tv"></i></div>
+      <div class="project-links">
+        <a class="live-btn" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+        <a class="code-btn" href="#" target="_blank"><i class="fas fa-code"></i> Code</a>
+      </div>
+      <h2>Netflix Home Landing Page</h2>
+      <p class="project-desc">
+        Sleek Netflix-style landing page, showing trending movies with carousel, profile slider, and polished hero section.
+      </p>
+      <div class="project-tags">
+        <span>HTML5</span><span>CSS3</span><span>JS</span>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-icon"><i class="fas fa-book"></i></div>
+      <div class="project-links">
+        <a class="live-btn" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+        <a class="code-btn" href="#" target="_blank"><i class="fas fa-code"></i> Code</a>
+      </div>
+      <h2>Learning Journal Website</h2>
+      <p class="project-desc">
+        Simple and elegant web journal for tracking learning progress and coding notes, with interactive entries, tags, and responsive mobile support.
+      </p>
+      <div class="project-tags">
+        <span>HTML5</span><span>SCSS</span><span>JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- revives  -->
+<div class="gaps-between-secition" id="reviews-secitions"></div>
+<section class="reviews-section"  >
+  <h1 class="reviews-title">Client <span class="highlight">Reviews</span></h1>
+  <div class="reviews-grid">
+    <div class="review-card current">
+      <div class="review-stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="review-text">
+        "Partnering with Yash for our Beyond Reel portfolio was one of the best decisions we made. He brought our vision to life with seamless design, inspiring creativity, and flawless performance. Communication was effortless, deadlines were never missed, and the end result truly wowed our clients. Highly recommended for anyone who values quality and professionalism."
+      </p>
+      <div class="review-client">
+        <i class="fas fa-user"></i>
+        <span>
+          <strong>Mohit</strong><br>
+          Beyond Reel Owner
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- contact section  -->
+ <div class="gaps-between-secition" id="contact-secitions"></div>
+ <section class="contact-section">
+  <h1 class="contact-title">Get In <span class="highlight">Touch</span></h1>
+  <div class="contact-grid">
+    <!-- Left Info Panel -->
+    <div class="contact-info">
+      <h2>Let's Start a Project Together</h2>
+      <p>Ready to bring your ideas to life? I’d love to hear about your project and discuss how we can work together to create something amazing.</p>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:yashmathpal0550@gmail.com">yashmathpal0550@gmail.com</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <strong>Phone</strong><br>
+          <a href="tel:+919999480555">+91 9999480555</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Form Panel -->
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 9876543210">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="send-btn">
+        Send Message&nbsp;<i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- footer  -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>Yash</h2>
+      <p>Frontend Developer &amp; Web Creator</p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <p>© 2025 Yash. All rights reserved. Built with <span class="heart">❤️</span> and lots of coffee.</p>
+  </div>
+</footer>
+
 
 
 

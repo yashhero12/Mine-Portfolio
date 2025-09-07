@@ -72,3 +72,16 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 200 + i * 230);
   });
 });
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.project-card').forEach((card, i) => {
+    card.style.opacity = 0;
+    card.style.transform = "translateY(50px) scale(0.98)";
+    setTimeout(() => {
+      card.style.transition = "transform 0.7s cubic-bezier(.32,2,.55,.27), opacity 0.68s";
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0) scale(1)";
+    }, 250 + i * 120);
+  });
+});
